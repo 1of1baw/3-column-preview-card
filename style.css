@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 'Lexend Deca' sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin: 25px 0;
+    font-size: 35px;
+    font-family:'Big Shoulders Display', cursive;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+    line-height: 1.6;
+}
+
+img {
+    width: 30%;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .component {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main .card {
+    width: calc(100 / 3);
+    padding: 45px;
+    background-color: var(--slr);
+}
+
+main .card button {
+    padding: 13px 30px;
+    border-radius: 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: var(--slr);
+}
+
+main .card button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width:768px) {
+    main .component {
+        flex-direction: column;
+        padding: 100px 20px;
+    }
+
+    main .card {
+        width: 100px;
+        padding: 55px;
+    }
+
+    main .card p {
+        margin-bottom: 25px;
+    }
+}
